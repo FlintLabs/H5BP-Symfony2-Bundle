@@ -1,0 +1,13 @@
+The H5BP1 Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.
+
+Add to your deps
+
+Add the autoload paths
+
+Register the bundle
+
+Update your ::base.html.twig
+
+Specify your CSS Bundle
+
+Optionally use the other filters available
