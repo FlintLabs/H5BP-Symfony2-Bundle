@@ -3,7 +3,7 @@
 Technologies at work
 
 * h5bp v1: Provides the boilerplate code HTML5/js and reset CSS
-* Assetic: Provides filters for coding with various css/js technologies (Less, Sass, CoffeeScript, etc)
+* Assetic: Provides filters for coding, compiling with various css/js technologies (Less, Sass, CoffeeScript, etc)
 * Twig: Provides a easy to use template language, which you can leverage for 'extending' base code (like h5bp)
 * Symfony2: Easy framework for bundling technologies, managing dependencies and writing your application
 
@@ -99,9 +99,6 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
 
 By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle.
 
-* Leverage different technology filters to handle css/js Less, Sass, CoffeeScript, cssEmbed, Google Closuer, YUI css/js compressor, sprockets, stylus etc
-* Manage your google analytics defaults
-* Insert defaults for other regions
 
     {% extends 'FlintLabsH5BP1Bundle:Default:base.html.twig' %}
 
@@ -127,6 +124,7 @@ By default, your applications will extend the base template, `::base.html.twig`.
     {% block analytics %}
         <!-- Analytics -->
     {% endblock %}
+
 
 ## Other Template Regions
 
