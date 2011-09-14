@@ -1,5 +1,11 @@
 The H5BP1 Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.
 
+Technologies at work
+* h5bp v1: Provides the boilerplate code HTML5/js and reset CSS
+* Assetic: Provides filters for coding with various css/js technologies (Less, Sass, CoffeeScript, etc)
+* Twig: Provides a easy to use template language, which you can leverage for 'extending' base code (like h5bp)
+* Symfony2: Easy framework for bundling technologies, managing dependencies and writing your application
+
 # Example
 The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plate for web projects. The boiler plate code has been incorporated into the bundle `FlintLabs\Bundle\H5BP1Bundle`.
 
