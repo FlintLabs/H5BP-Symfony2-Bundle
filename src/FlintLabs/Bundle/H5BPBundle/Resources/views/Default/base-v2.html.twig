@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<!--
+{% block credits %}
+
+    _|_|  _|  _|              _|
+  _|      _|      _|_|_|    _|_|_|_|
+_|_|_|_|  _|  _|  _|    _|    _|
+  _|      _|  _|  _|    _|    _|
+  _|      _|  _|  _|    _|      _|_|
+
+Powered by: Flint Labs H5BP v1 Frontend Bundle
+{% endblock %}
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{% block title %}{% endblock %}</title>
+    {% block canonical %}{% endblock %}
+
+{% block metadata %}
+    <meta name="description" content="">
+    <meta name="author" content="">
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+{% block stylesheets %}
+{% endblock %}
+
+    <script src="{{ asset('bundles/flintlabsH5BP/v2/js/libs/modernizr-2.0.6.min.js') }}"></script>
+</head>
+
+<body>
+
+{% block body %}{% endblock %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ asset('bundles/flintlabsH5BP/v2/js/libs/jquery-1.6.2.min.js') }}"><\/script>')</script>
+
+{% block javascripts %}
+    <script defer src="{{ asset('bundles/flintlabsH5BP/v2/js/plugins.js') }}"></script>
+
+    <!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+   <![endif]-->
+{% endblock %}
+{% block analytics %}
+<!-- GOOGLE ANALYTICS MISSING -->
+{% endblock %}
+
+</body>
+</html>

@@ -1,16 +1,14 @@
-**The H5BP v1 Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.**
-
-Looking for v2 of the html5boilderplate? Visit the v2 of this bundle: [https://github.com/FlintLabs/H5BP2Bundle](https://github.com/FlintLabs/H5BP2Bundle)
+**The H5BP Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.**
 
 Technologies at work
 
-* h5bp v1: Provides the boilerplate code HTML5/js and reset CSS
+* h5bp v1 and v2: Provides the boilerplate code HTML5/js and reset CSS
 * Assetic: Provides filters for coding, compiling with various css/js technologies (Less, Sass, CoffeeScript, etc)
 * Twig: Provides a easy to use template language, which you can leverage for 'extending' base code (like h5bp)
 * Symfony2: Easy framework for bundling technologies, managing dependencies and writing your application
 
 # Example
-The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plate for web projects. The boiler plate code has been incorporated into the bundle `FlintLabs\Bundle\H5BP1Bundle`.
+The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plate for web projects. The boiler plate code has been incorporated into the bundle `FlintLabs\Bundle\H5BPBundle`.
 
 ## Your twig template
 
@@ -44,72 +42,78 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
 
 ## HTML Output
 
-    <!doctype html>
-    <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-    <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-    <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-    <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-    <!--
-       _
-      (_)           _
-       _ _   _  ___| |_      ____  ____ _   _  ___  ____
-      | | | | |/___)  _)    / ___)/ _  | | | |/___)/ _  )
-      | | |_| |___ | |__   ( (___( ( | | |_| |___ ( (/ /
-     _| |\____(___/ \___)   \____)\_||_|\____(___/ \____)
-    (__/
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<!--
+   _
+  (_)           _
+   _ _   _  ___| |_      ____  ____ _   _  ___  ____
+  | | | | |/___)  _)    / ___)/ _  | | | |/___)/ _  )
+  | | |_| |___ | |__   ( (___( ( | | |_| |___ ( (/ /
+ _| |\____(___/ \___)   \____)\_||_|\____(___/ \____)
+(__/
 
-    Author: Example author and other branding information
-    -->
+Author: Example author and other branding information
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hello world</title>
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <title>Hello world</title>
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <!--<link rel="shortcut icon" href="/favicon.ico">-->
-        <!--<link rel="apple-touch-icon" href="/apple-touch-icon.png">-->
+    <link href="css/e21db22.css" type="text/css" rel="stylesheet" />
+    
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
 
-        <link href="css/f9ccd32.css" type="text/css" rel="stylesheet" />
-        <script src="bundles/flintlabsh5bp1/js/libs/modernizr-1.7.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Example Site</h1>
-            <nav>
-                <ul>...</ul>
-            </nav>
-        </header>
-        <article>
-            <h1>Example Article</h1>
-        </article>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-        <script>window.jQuery || document.write("<script src='bundles/flintlabsh5bp1/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
-        <!--[if lt IE 7 ]>
-            <script src="bundles/flintlabsh5bp1/js/libs/dd_belatedpng.js"></script>
-            <script>DD_belatedPNG.fix("img, .png_bg");</script>
-        <![endif]-->
-        <script src="bundles/flintlabsh5bp1/js/plugins.js" type="text/javascript"></script>
-        <!-- Analytics -->
-    </body>
-    </html>
+<body>
+
+    <header>
+        <h1>Example Site</h1>
+        <nav>
+            <ul>...</ul>
+        </nav>
+    </header>
+    <article>
+        <h1>Example Article</h1>
+    </article>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+            <script defer src="js/plugins.js"></script>
+
+    <!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+   <![endif]-->
+
+</body>
+</html>
+
 
 ## Configuration of base template
 
-By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle.
+By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle. You can also switch between v1 and v2 of the h5bp code depending on which base template you extend.
 
 
-    {% extends 'FlintLabsH5BP1Bundle:Default:base.html.twig' %}
+    {% extends 'FlintLabsH5BPBundle:Default:base-v2.html.twig' %}
 
     {% block stylesheets %}
         {# Example mixing in the reset top/bottom to your css less file #}
         {% stylesheets filter='less,?yui_css'
-            '@FlintLabsH5BP1Bundle/Resources/css/reset-top.css'
+            '@FlintLabsH5BPBundle/Resources/css/reset-top.css'
             '@MyBundle/Resources/less/site.less'
-            '@FlintLabsH5BP1Bundle/Resources/css/reset-top.css'
+            '@FlintLabsH5BPBundle/Resources/css/reset-top.css'
             %}
             <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
         {% endstylesheets %}
@@ -138,6 +142,8 @@ By default, your applications will extend the base template, `::base.html.twig`.
 
     {% block metadata %}{% endblock %}
 
+    {% block head %}{% endblock %}
+
     {% block stylesheets %}{% endblock %}
 
     {% block body %}{% endblock %}
@@ -150,8 +156,8 @@ By default, your applications will extend the base template, `::base.html.twig`.
 
 ## Update your deps file
 
-    [h5bp1]
-    git=git@github.com:FlintLabs/H5BP1Bundle.git
+    [H5BP]
+    git=git@github.com:FlintLabs/H5BPBundle.git
 
 ## Update your vendors
 
@@ -162,7 +168,7 @@ By default, your applications will extend the base template, `::base.html.twig`.
     // app/autoload.php
     $loader->registerNamespaces(array(
         // ...
-        'FlintLabs\\H5BP1Bundle' => __DIR__.'/../vendor/h5bp1/src',
+        'FlintLabs\\H5BPBundle' => __DIR__.'/../vendor/H5BP/src',
         // ...
     ));
 
@@ -173,7 +179,7 @@ By default, your applications will extend the base template, `::base.html.twig`.
     {
         return array(
             // ...
-            new FlintLabs\Bundle\H5BP1Bundle\FlintLabsH5BP1Bundle(),
+            new FlintLabs\Bundle\H5BPBundle\FlintLabsH5BPBundle(),
             // ...
         );
     }
