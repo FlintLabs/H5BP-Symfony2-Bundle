@@ -157,7 +157,7 @@ By default, your applications will extend the base template, `::base.html.twig`.
 ## Update your deps file
 
     [H5BP]
-    git=git@github.com:FlintLabs/H5BPBundle.git
+    git=git@github.com:FlintLabs/H5BP-Symfony2-Bundle.git
 
 ## Update your vendors
 
