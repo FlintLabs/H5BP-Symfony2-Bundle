@@ -100,58 +100,6 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
     </body>
     </html>
 
-
-## Configuration of base template
-
-By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle. You can also switch between v1 and v2 of the h5bp code depending on which base template you extend.
-
-
-    {% extends 'FlintLabsH5BPBundle:Default:base-v2.html.twig' %}
-
-    {% block stylesheets %}
-        {# Example mixing in the reset top/bottom to your css less file #}
-        {% stylesheets filter='less,?yui_css'
-            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
-            '@MyBundle/Resources/less/site.less'
-            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
-            %}
-            <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
-        {% endstylesheets %}
-    {% endblock %}
-
-    {% block javascripts %}
-        {# Include the parent JS that is provided by h5bp, like jquery, belated, .. #}
-        {{ parent() }}
-        {% javascripts output='/js/instant.js' filter='coffee' '@MyBundle/Resources/js/instant.coffee' %}
-            <script type="text/javascript" src="{{ asset_url }}"></script>
-        {% endjavascripts %}
-    {% endblock %}
-
-    {% block analytics %}
-        <!-- Analytics -->
-    {% endblock %}
-
-
-## Other Template Regions
-
-    {% block credits %}{% endblock %}
-
-    {% block title %}{% endblock %}
-
-    {% block canonical %}{% endblock %}
-
-    {% block metadata %}{% endblock %}
-
-    {% block head %}{% endblock %}
-
-    {% block stylesheets %}{% endblock %}
-
-    {% block body %}{% endblock %}
-
-    {% block javascripts %}{% endblock %}
-
-    {% block analytics %}{% endblock %}
-
 # Installation with Symfony2
 
 ## Update your deps file
@@ -183,6 +131,56 @@ By default, your applications will extend the base template, `::base.html.twig`.
             // ...
         );
     }
+
+## Configuration of base template
+
+By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle. You can also switch between v1 and v2 of the h5bp code depending on which base template you extend.
+
+
+    {% extends 'FlintLabsH5BPBundle:Default:base-v2.html.twig' %}
+
+    {% block stylesheets %}
+        {# Example mixing in the reset top/bottom to your css less file #}
+        {% stylesheets filter='less,?yui_css'
+            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
+            '@MyBundle/Resources/less/site.less'
+            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
+            %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+        {% endstylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {# Include the parent JS that is provided by h5bp, like jquery, belated, .. #}
+        {{ parent() }}
+        {% javascripts output='/js/instant.js' filter='coffee' '@MyBundle/Resources/js/instant.coffee' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+
+    {% block analytics %}
+        <!-- Analytics -->
+    {% endblock %}
+
+## Other Template Regions
+
+    {% block credits %}{% endblock %}
+
+    {% block title %}{% endblock %}
+
+    {% block canonical %}{% endblock %}
+
+    {% block metadata %}{% endblock %}
+
+    {% block head %}{% endblock %}
+
+    {% block stylesheets %}{% endblock %}
+
+    {% block body %}{% endblock %}
+
+    {% block javascripts %}{% endblock %}
+
+    {% block analytics %}{% endblock %}
 
 # Other useful resources and documents
 [Assetic](https://github.com/kriswallsmith/assetic) Managing resources (JS/CSS) in PHP/Symfony2
