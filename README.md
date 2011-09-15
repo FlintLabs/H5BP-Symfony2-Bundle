@@ -42,63 +42,63 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
 
 ## HTML Output
 
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-<!--
-   _
-  (_)           _
-   _ _   _  ___| |_      ____  ____ _   _  ___  ____
-  | | | | |/___)  _)    / ___)/ _  | | | |/___)/ _  )
-  | | |_| |___ | |__   ( (___( ( | | |_| |___ ( (/ /
- _| |\____(___/ \___)   \____)\_||_|\____(___/ \____)
-(__/
+    <!doctype html>
+    <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+    <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+    <!--
+       _
+      (_)           _
+       _ _   _  ___| |_      ____  ____ _   _  ___  ____
+      | | | | |/___)  _)    / ___)/ _  | | | |/___)/ _  )
+      | | |_| |___ | |__   ( (___( ( | | |_| |___ ( (/ /
+     _| |\____(___/ \___)   \____)\_||_|\____(___/ \____)
+    (__/
 
-Author: Example author and other branding information
--->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    Author: Example author and other branding information
+    -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Hello world</title>
-    
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <title>Hello world</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
 
 
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link href="css/e21db22.css" type="text/css" rel="stylesheet" />
-    
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
-</head>
+        <link href="css/e21db22.css" type="text/css" rel="stylesheet" />
 
-<body>
+        <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    </head>
 
-    <header>
-        <h1>Example Site</h1>
-        <nav>
-            <ul>...</ul>
-        </nav>
-    </header>
-    <article>
-        <h1>Example Article</h1>
-    </article>
+    <body>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+        <header>
+            <h1>Example Site</h1>
+            <nav>
+                <ul>...</ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Example Article</h1>
+        </article>
 
-            <script defer src="js/plugins.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-    <!--[if lt IE 7 ]>
-        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-   <![endif]-->
+                <script defer src="js/plugins.js"></script>
 
-</body>
-</html>
+        <!--[if lt IE 7 ]>
+            <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+            <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+       <![endif]-->
+
+    </body>
+    </html>
 
 
 ## Configuration of base template
