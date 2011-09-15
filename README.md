@@ -1,4 +1,6 @@
-**The H5BP1 Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.**
+**The H5BP v1 Bundle is a Symfony2/Assetic/Twig bundle implementation of the popular h5bp boiler plate code.**
+
+Looking for v2 of the html5boilderplate? Visit the v2 of this bundle: [https://github.com/FlintLabs/H5BP2Bundle](https://github.com/FlintLabs/H5BP2Bundle)
 
 Technologies at work
 
