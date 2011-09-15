@@ -104,8 +104,9 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
 
 ## Update your deps file
 
-    [H5BP]
-    git=git@github.com:FlintLabs/H5BP-Symfony2-Bundle.git
+    [H5BP-Symfony2-Bundle]
+        git=git@github.com:FlintLabs/H5BP-Symfony2-Bundle.git
+        target=/bundles/FlintLabs/Bundle/H5BPBundle
 
 ## Update your vendors
 
@@ -116,7 +117,7 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
     // app/autoload.php
     $loader->registerNamespaces(array(
         // ...
-        'FlintLabs\\H5BPBundle' => __DIR__.'/../vendor/H5BP/src',
+        'FlintLabs\\Bundle\\H5BPBundle' => __DIR__.'/../vendor/bundles/',
         // ...
     ));
 
