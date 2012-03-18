@@ -2,7 +2,7 @@
 
 Technologies at work
 
-* h5bp v1 and v2: Provides the boilerplate code HTML5/js and reset CSS
+* h5bp v1, v2 and v3: Provides the boilerplate code HTML5/js and reset CSS
 * Assetic: Provides filters for coding, compiling with various css/js technologies (Less, Sass, CoffeeScript, etc)
 * Twig: Provides a easy to use template language, which you can leverage for 'extending' base code (like h5bp)
 * Symfony2: Easy framework for bundling technologies, managing dependencies and writing your application
@@ -135,17 +135,17 @@ The [h5bp](http://html5boilerplate.com/) project provides a standard boiler plat
 
 ## Configuration of base template
 
-By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle. You can also switch between v1 and v2 of the h5bp code depending on which base template you extend.
+By default, your applications will extend the base template, `::base.html.twig`. In your `::base.html.twig`, you can inherit again from the h5bp bundle. You can also switch between v1, v2 and v3 of the h5bp code depending on which base template you extend.
 
 
-    {% extends 'FlintLabsH5BPBundle:Default:base-v2.html.twig' %}
+    {% extends 'FlintLabsH5BPBundle:Default:base-v3.html.twig' %}
 
     {% block stylesheets %}
         {# Example mixing in the reset top/bottom to your css less file #}
         {% stylesheets filter='less,?yui_css'
-            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
+            '@FlintLabsH5BPBundle/Resources/v3/css/reset-top.css'
             '@MyBundle/Resources/less/site.less'
-            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
+            '@FlintLabsH5BPBundle/Resources/v3/css/reset-top.css'
             %}
             <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
         {% endstylesheets %}
