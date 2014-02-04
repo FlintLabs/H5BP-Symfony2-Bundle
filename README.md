@@ -145,7 +145,7 @@ By default, your applications will extend the base template, `::base.html.twig`.
         {% stylesheets filter='less,?yui_css'
             '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
             '@MyBundle/Resources/less/site.less'
-            '@FlintLabsH5BPBundle/Resources/v2/css/reset-top.css'
+            '@FlintLabsH5BPBundle/Resources/v2/css/reset-bottom.css'
             %}
             <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
         {% endstylesheets %}
